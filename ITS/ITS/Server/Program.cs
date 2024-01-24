@@ -1,9 +1,25 @@
+using ITS.Server.Data;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+
+ConfigurationManager configuration = builder.Configuration;
+
+builder.Services.AddDbContext<ProjectDbContext>(options =>
+{
+    options.UseSqlServer(configuration.GetConnectionString("IdentityConnection"),
+        sqlServerOptionsAction: sqlOptions =>
+        {
+            sqlOptions.EnableRetryOnFailure(
+            maxRetryCount: 5,
+            maxRetryDelay: TimeSpan.FromSeconds(15),
+            errorNumbersToAdd: null);
+        });
+});
 
 var app = builder.Build();
 
