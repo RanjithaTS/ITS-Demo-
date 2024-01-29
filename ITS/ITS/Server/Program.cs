@@ -1,4 +1,5 @@
 using ITS.Server.Data;
+using ITS.Server.Services;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,6 +21,8 @@ builder.Services.AddDbContext<ProjectDbContext>(options =>
             errorNumbersToAdd: null);
         });
 });
+
+builder.Services.AddScoped<IInventoryService, InventoryService>();
 
 var app = builder.Build();
 
