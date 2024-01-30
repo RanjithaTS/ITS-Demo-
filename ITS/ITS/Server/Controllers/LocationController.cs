@@ -5,7 +5,7 @@ namespace ITS.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PartController : ControllerBase
+    public class LocationController : ControllerBase
     {
     }
 }
