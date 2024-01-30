@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITS.Server", "ITS\Server\ITS.Server.csproj", "{D6B1B38E-F7E0-4A1F-B022-C43600BA3F05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITS.Server", "ITS\Server\ITS.Server.csproj", "{D6B1B38E-F7E0-4A1F-B022-C43600BA3F05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITS.Client", "ITS\Client\ITS.Client.csproj", "{3D7162B6-ECEB-4E8B-B5E4-FCEA312F19F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITS.Client", "ITS\Client\ITS.Client.csproj", "{3D7162B6-ECEB-4E8B-B5E4-FCEA312F19F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITS.Shared", "ITS\Shared\ITS.Shared.csproj", "{AE141B66-0450-4C50-A88E-990A76179810}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITS.Shared", "ITS\Shared\ITS.Shared.csproj", "{AE141B66-0450-4C50-A88E-990A76179810}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BD445265-82E5-4D9B-8C71-AE66853E39AC}"
 EndProject
@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.API", "Services\Id
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inventory-CSI", "Inventory-CSI", "{EEDD6445-18BA-4816-96E6-1CDE5B10ED77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory-CSI", "Services\Inventory\Inventory-CSI\Inventory-CSI.csproj", "{6D53E0D3-2C68-450B-8F74-E36A92F1AD4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory-CSI", "Services\Inventory\Inventory-CSI\Inventory-CSI.csproj", "{6D53E0D3-2C68-450B-8F74-E36A92F1AD4C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClientApps", "ClientApps", "{C2D74315-FE2A-4641-9597-C88053DBE3C5}"
 EndProject

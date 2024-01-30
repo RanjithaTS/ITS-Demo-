@@ -1,0 +1,17 @@
+﻿<MudNavMenu Class="mud-width-full">
+    <MudText Typo="Typo.h6" Class="px-4">Inventory</MudText>
+    <MudText Typo="Typo.body2" Class="px-4 mud-text-secondary">Management</MudText>
+    <MudDivider Class="my-2" />
+    <MudNavLink Href="/dvc" Icon="@Icons.Material.Filled.Dashboard" IconColor="Color.Primary">Dashboard</MudNavLink>
+    <MudNavLink Href="/ivc" Icon="@Icons.Material.Filled.Storage" IconColor="Color.Primary">Inventory</MudNavLink>
+    <MudNavLink Href="/mpvc" Icon="@Icons.Material.Filled.WorkspacePremium" IconColor="Color.Primary" Disabled="true">MyProjects</MudNavLink>
+    <MudNavLink Href="/projects" Icon="@Icons.Material.Filled.AllInbox" IconColor="Color.Primary" Disabled="true">Projects</MudNavLink>
+    <MudNavGroup Title="Settings" Icon="@Icons.Material.Filled.Settings" IconColor="Color.Primary" Expanded="true">
+        <MudNavLink Href="/uvc" Icon="@Icons.Material.Filled.People" IconColor="Color.Primary">Users</MudNavLink>
+        <MudNavLink Href="/rvc" Icon="@Icons.Material.Filled.People" IconColor="Color.Primary">Roles</MudNavLink>
+        <MudNavLink Href="/lvc" Icon="@Icons.Material.Filled.MyLocation" IconColor="Color.Primary">Location</MudNavLink>
+    </MudNavGroup>
+</MudNavMenu>
+@code {
+
+}
